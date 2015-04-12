@@ -1,0 +1,15 @@
+/bin
+/doc
+/gen
+/libs
+
+.classpath
+.project
+
+desktop.ini
+
+/*.png
+proguard-project.txt
+project.properties
+
+!.gitkeep

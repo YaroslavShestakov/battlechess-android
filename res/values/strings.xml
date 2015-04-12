@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">BattleChess</string>
+
+     <string name="board_desc">Board appearance</string>
+ 
+    <string-array name="board_appearances">
+        <item>Default</item>
+        <item>Grass-Dirt</item>
+    </string-array>
+</resources>

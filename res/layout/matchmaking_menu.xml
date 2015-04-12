@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/newGameBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/loadGameBtn"
+            android:layout_alignLeft="@+id/loadGameBtn"
+            android:layout_alignRight="@+id/loadGameBtn"
+            android:layout_marginBottom="55dp"
+            android:onClick="onStartNewGameButtonPress"
+            android:text="New game" />
+
+        <Button
+            android:id="@+id/loadGameBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/continueGameBtn"
+            android:layout_alignBottom="@+id/continueGameBtn"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="51dp"
+            android:text="Load game"
+            android:onClick="onLoadGameButtonPress" />
+
+        <Button
+            android:id="@+id/continueGameBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="103dp"
+            android:layout_marginLeft="137dp"
+            android:layout_toRightOf="@+id/loadGameBtn"
+            android:onClick="onResumeGameButtonPress"
+            android:enabled="false"
+            android:text="Continue" />
+
+</RelativeLayout>

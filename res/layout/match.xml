@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/center" >
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Rotate pieces"
+            android:onClick="onRotatePiecesButtonPress" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="28dp"
+            android:onClick="onSaveGameButtonPress"
+            android:text="Save game" />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" >
+
+        <yaroslav.android.battlechess.gui.views.BoardView
+            android:id="@+id/board"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/black" >
+        </yaroslav.android.battlechess.gui.views.BoardView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/center"
+        android:paddingLeft="10dp" >
+
+        <ImageView
+            android:id="@+id/turn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="-40dp"
+            android:src="@drawable/turn" />
+
+        <TextView
+            android:id="@+id/team"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/turn"
+            android:paddingLeft="20dp"
+            android:text="White"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+    </RelativeLayout>
+</RelativeLayout>
